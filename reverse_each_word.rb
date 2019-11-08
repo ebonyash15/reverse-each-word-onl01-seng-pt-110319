@@ -1,3 +1,5 @@
 def reverse_each_word(string)
-string.reverse
+  reversed = " "
+string.collect do |word|
+  reversed << word.reverse
 end

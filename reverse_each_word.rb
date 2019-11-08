@@ -1,6 +1,7 @@
 def reverse_each_word(string)
+  almost=""
   array=string.split
   array.collect do |word|
-  word.reverse.join(" ")
+  almost << word.reverse
   end
 end
